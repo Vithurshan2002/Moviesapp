@@ -16,8 +16,8 @@ function App() {
         <Route path="/toprated" element={<Movies  apipath="movie/top_rated"/>} />
         <Route path="/popular" element={<Movies apipath="movie/popular" />} />
         <Route path="/upcoming" element={<Movies apipath="movie/upcoming"/>} />
-        <Route path="/movies/:id" element={<MovieDetails />} />
-        <Route path="/search" element={<Search />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+        <Route path="/search" element={<Search/>} apipath="search/movie" />
       *  <Route path="*" element={<Notfound />} /> 
       </Routes>
       <Footer />

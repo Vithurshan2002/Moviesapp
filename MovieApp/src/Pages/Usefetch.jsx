@@ -8,7 +8,7 @@ export const UseFetch = (apipath) => {
   const url = `https://api.themoviedb.org/3/${apipath}?api_key=${key}`;
 
   useEffect(() => {
-  function getMovies() {
+ function getMovies() {
       axios
         .get(url)
         .then((data) => {
