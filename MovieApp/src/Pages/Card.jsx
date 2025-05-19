@@ -1,6 +1,6 @@
 import React from 'react'
 import Rating from '@mui/material/Rating';
-import Img1 from './a.jpg'
+import Img1 from './IMG.png'
 import { Link } from 'react-router-dom';
 import Search from './Search';
 import { MdGroups } from 'react-icons/md';

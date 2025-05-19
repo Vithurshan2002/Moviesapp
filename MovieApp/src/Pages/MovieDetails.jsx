@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import Img from "./a.jpg";
+import Img from "./IMG.png";
 import { CiStar } from "react-icons/ci";
 import { MdGroups } from "react-icons/md";
 import { useParams } from "react-router-dom";
@@ -35,7 +34,7 @@ const MovieDetails = (apiPath,search_query="") => {
   });
 
 
-   const image=movie.poster_path?`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`:Img;
+   const image=movie.poster_path?`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`: Img;
   
   
    return (

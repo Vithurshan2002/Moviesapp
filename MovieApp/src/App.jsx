@@ -6,6 +6,7 @@ import Search from "./Pages/Search";
 import Notfound from "./Pages/Notfound";
 import Footer from "./Pages/Footer";
 import { ScrollTop } from "./Pages/ScrollTop";
+import {} from 'react-redux'
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
         <Route path="/upcoming" element={<Movies apipath="movie/upcoming"/>} />
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/search" element={<Search apipath="search/movie"/>} />
-       <Route path="*" element={<Notfound />} /> 
+         <Route path="*" element={<Notfound />} /> 
       </Routes>
       <Footer />
     </BrowserRouter>
