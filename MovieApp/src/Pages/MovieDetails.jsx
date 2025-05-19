@@ -5,17 +5,16 @@ import { CiStar } from "react-icons/ci";
 import { MdGroups } from "react-icons/md";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-const MovieDetails = () => {
+const MovieDetails = (apiPath,search_query="") => {
   const params = useParams();
   const [movie, setmovies] = useState([]);
   const key = import.meta.env.VITE_APIKEY;
 
-  const url = `https://api.themoviedb.org/3/movie/${params.id}?api_key=${key}`;
+  const url = `https://api.themoviedb.org/3/movie/${params.id}?api_key=${key}&query=${search_query}`;
 
-    
   console.log( 'urlis'+ params.id);
-   console.log( 'api'+ key);
-  console.log(  url);
+   console.log('api'+ key);
+  console.log(url);
   useEffect(() => {
     function showMoviedetails() {
       axios

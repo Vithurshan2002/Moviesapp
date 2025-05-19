@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex items-center">
            <div className="mr-2 text-white text-3xl hover:text-stone-700 "><RiMovieFill/></div>
           <h1 className="text-black font-extrabold md:text-2xl text-4xl ">
-          MovieHunt
+          UltraHunt
           </h1>
          
         </div>
