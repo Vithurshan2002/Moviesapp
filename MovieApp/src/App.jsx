@@ -6,7 +6,7 @@ import Search from "./Pages/Search";
 import Notfound from "./Pages/Notfound";
 import Footer from "./Pages/Footer";
 import { ScrollTop } from "./Pages/ScrollTop";
-import {} from 'react-redux'
+
 function App() {
   return (
     <BrowserRouter>

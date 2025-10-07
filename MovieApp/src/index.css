@@ -1,4 +1,13 @@
 
  @import "tailwindcss";
 
+ .firstnav>li>.active{
+    text-decoration: underline;
+    color:black
+ }
+
+@theme {
  
+  --breakpoint-ux: 40rem;
+  --breakpoint-sm: 60rem;
+}
