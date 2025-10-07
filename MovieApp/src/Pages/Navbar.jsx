@@ -40,10 +40,20 @@ const Navbar = () => {
         />
         <div className="flex items-center">
           <div className="mr-2 text-white text-3xl hover:text-stone-700 ">
-            <RiMovieFill />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33.34"
+              height="32"
+              viewBox="0 0 25 24"
+            >
+              <path
+                fill="#f3ecec"
+                d="M15.24 7a3.25 3.25 0 1 0-5.535-3.408A2.75 2.75 0 0 0 5.55 7h-.801A2.25 2.25 0 0 0 2.5 9.25v8a2.25 2.25 0 0 0 2.25 2.25h11.5a2.25 2.25 0 0 0 2.25-2.25v-.328l2.066 1.35a1.25 1.25 0 0 0 1.934-1.046V9.274a1.25 1.25 0 0 0-1.934-1.046L18.5 9.578V9.25A2.25 2.25 0 0 0 16.25 7zm-4.49-1.75a1.75 1.75 0 1 1 3.5 0a1.75 1.75 0 0 1-3.5 0m7.75 6.12L21 9.735v7.028l-2.5-1.633zM9.25 5.75a1.25 1.25 0 1 1-2.5 0a1.25 1.25 0 0 1 2.5 0M4.75 8.5h11.5a.75.75 0 0 1 .75.75v8a.75.75 0 0 1-.75.75H4.75a.75.75 0 0 1-.75-.75v-8a.75.75 0 0 1 .75-.75"
+              />
+            </svg>
           </div>
-          <h1 className="text-black font-extrabold sm:text-4xl ux:text-3xl text-3xl ">
-            Ultra Movies
+          <h1 className="text-black poppins-bold font-extrabold sm:text-4xl ux:text-3xl text-3xl ">
+            Ultracinity
           </h1>
         </div>
 
@@ -70,10 +80,10 @@ const Navbar = () => {
                 type="text"
                 name="search"
                 placeholder="Search"
-                className="bg-white text-black px-1  outline-none font-serif"
+                className="bg-white roboto text-black px-1  outline-none font-serif"
               />
             </div>
-            <IoSearchSharp size={25} className="text-blue-900 cursor-pointer" />
+            <button> <IoSearchSharp size={25} className="text-blue-900 cursor-pointer" /></button>
           </div>
         </form>
       </div>
@@ -82,7 +92,7 @@ const Navbar = () => {
           {" "}
           <li
             onClick={Go}
-            className="py-1 my-1 hover:bg-blue-800 border-3 bg-blue-700 test hover:text-black cursor-pointer transition-all duration-500 border-white  "
+            className="py-1 my-1 hover:bg-blue-800 border-3 bg-blue-700 test hover:text-black cursor-pointer transition-all duration-500 border-white translate-x-350 "
           >
             Home
           </li>
@@ -91,7 +101,7 @@ const Navbar = () => {
           {" "}
           <li
             onClick={Go}
-            className="py-1 my-1  hover:bg-blue-600  border-3 test bg-blue-700 hover:text-black cursor-pointer transition-all duration-600 border-white "
+            className="py-1 my-1  hover:bg-blue-600  border-3 test bg-blue-700 hover:text-black cursor-pointer transition-all duration-600 border-white -translate-x-350 "
           >
             {" "}
             TopRates Movies
@@ -101,7 +111,7 @@ const Navbar = () => {
           {" "}
           <li
             onClick={Go}
-            className="py-1 my-1 hover:bg-blue-600   bg-blue-700 test hover:text-black cursor-pointer transition-all duration-500 border-3 border-white "
+            className="py-1 my-1 hover:bg-blue-600   bg-blue-700 test hover:text-black cursor-pointer transition-all duration-500 border-3 border-white translate-x-350 "
           >
             {" "}
             Popular Movies
@@ -111,7 +121,7 @@ const Navbar = () => {
           {" "}
           <li
             onClick={Go}
-            className="py-1 my-1 hover:bg-blue-600 border-3 bg-blue-700 hover:text-black test cursor-pointer transition-all duration-600 border-white "
+            className="py-1 my-1 hover:bg-blue-600 border-3 bg-blue-700 hover:text-black test cursor-pointer transition-all duration-600 border-white -translate-x-350 "
           >
             Upcomming Movies
           </li>

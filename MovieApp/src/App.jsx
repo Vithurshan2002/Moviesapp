@@ -10,7 +10,7 @@ import { ScrollTop } from "./Pages/ScrollTop";
 function App() {
   return (
     <BrowserRouter>
-     <ScrollTop/>  {/*  this is also my component */}
+     <ScrollTop/> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Movies apipath="movie/now_playing" />} />

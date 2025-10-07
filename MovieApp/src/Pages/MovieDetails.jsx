@@ -60,7 +60,7 @@ const MovieDetails = ({apiPath, search_query = ""}) => {
           </div>
           <div className="pt-3 sm:pt-0">
             <h1 className="text-blue-600 text-xl font-bold">{movie.title}</h1>
-            <p className="py-2">{movie.overview}</p>
+            <p className="py-2 lato">{movie.overview}</p>
             <div className="flex gap-3 py-3 flex-wrap">
               {movie.genres
                 ? movie.genres.map((data, key) => {

@@ -17,25 +17,30 @@ const Movies = ({ apipath }) => {
   }
   return (
     <div className="py-30">
-      <p className="sm:text-4xl ux:text-3xl text-xl  font-extrabold text-emerald-800 text-center ">
+      <p className="sm:text-4xl ux:text-3xl text-xl maintopic font-extrabold text-emerald-800 text-center ">
         <TypeAnimation
           sequence={[
-            " Welcome to Ultra Movies!",
+            " Welcome to Ultra",
+            1000,
+            " Welcome to Cinema",
+            1000,
+            " Welcome to Infinity",
+            1000,
+            " Welcome to Ultracinity!",
             1000,
             "You can find top-rated movies",
             1000,
             "You can find Poppular movies",
             1000,
-             "You can find Upcomming movies",
+            "You can find Upcomming movies",
             1000,
           ]}
           speed={50}
           repeat={Infinity}
         />
-       
       </p>
       <div className="  flex justify-center items-center  pt-10">
-        <div className=" grid grid-cols-1 sm:grid-cols-4 ux:grid-cols-2 gap-20 ps-5 pe-5">
+        <div className=" grid grid-cols-1 sm:grid-cols-4 ux:grid-cols-2 gap-20 ps-8 pe-8">
           {data.map((data, key) => {
             return <Card key={key} data={data} />;
           })}

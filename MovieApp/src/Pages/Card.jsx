@@ -25,7 +25,7 @@ const Card = ({ data }) => {
       <h1 className="sm:text-xl text-lg pt-2 font-extrabold text-blue-700  font-['poppins'] line-clamp-1">
         {data.original_title}
       </h1>
-      <p className="pt-2 text-sm   ux:text-[14px] font-semibold line-clamp-3">{data.overview}</p>
+      <p className="pt-2 text-sm   ux:text-[14px]  line-clamp-3 lato">{data.overview}</p>
       <div className="flex  pt-3 items-center sm:space-x-5 space-x-5">
         <Link to={`/movie/${data.id}`}>
           <button className="border-blue-800 border-1 border-dotted font-semibold text-white bg-blue-800 rounded-full text-sm sm:text-[14px] px-4 py-1 hover:cursor-pointer hover:bg-blue-600 transition-all">
