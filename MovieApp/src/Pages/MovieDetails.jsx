@@ -50,8 +50,8 @@ const MovieDetails = ({apiPath, search_query = ""}) => {
         <p className="font-extrabold text-emerald-700 pb-5 text-3xl">
           {movie.original_title}
         </p>
-        <div className="flex md:flex-row flex-col  rounded-lg sm:space-x-10 border-2 border-blue-400 shadow-2xl p-8 group">
-          <div className="sm:w-260  h-auto">
+        <div className="flex md:flex-row flex-col  rounded-lg sm:space-x-10 ux:space-x-15 border-2 border-blue-400 shadow-2xl p-8 group">
+          <div className="sm:w-260 ux:w-250  h-auto">
             <img
               src={image}
               alt="no"
